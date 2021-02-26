@@ -1,0 +1,268 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.main-section {
+  position: relative;
+  background-image: url('img/main.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lang {
+  position: absolute;
+  top: 34px;
+  right: 24px;
+  z-index: 1;
+}
+
+.lang-link.active {
+  color: #ff671b;
+}
+
+.lang-link {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.lang-link:first-child {
+  margin-right: 12px;
+}
+
+.main-first-title span {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 90.81%;
+  /* identical to box height, or 27px */
+  text-align: center;
+  color: #ffffff;
+  vertical-align: super;
+}
+
+.main-title span{
+	font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 90.81%;
+  /* identical to box height, or 27px */
+  text-align: center;
+  color: #ffffff;
+  vertical-align: super;
+}
+
+.main-title {
+  padding-top: 190px;
+  padding-bottom: 26px;
+  margin: 0 auto;
+  font-size: 60px;
+  line-height: 54px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.main-subtitle {
+  font-size: 21px;
+  line-height: 29px;
+  text-align: center;
+  margin: 0 15%;
+  color: #ffffff;
+}
+
+.btn-block {
+  display: flex;
+  justify-content: center;
+  padding: 32px 0 62px 0;
+}
+
+.btn:first-child {
+  margin-right: 16px;
+}
+
+.btn {
+  padding: 10px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  text-decoration: none;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn-white {
+  background: #ffffff;
+  color: #333333;
+}
+
+.btn-orange {
+  background: #ff671b;
+  color: #ffffff;
+}
+
+.content-block {
+  display: flex;
+  padding: 94px 41px 94px 121px;
+}
+
+.content-block-desc {
+  max-width: 586px;
+  width: 50%;
+}
+
+.content-block-desc-title {
+  font-size: 36px;
+  line-height: 42px;
+  padding-bottom: 12px;
+  margin: 0;
+  color: #333333;
+}
+
+.content-block-desc-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.content-block-img {
+  padding: 82px 0 0 48px;
+}
+
+.content-block-img img {
+  display: block;
+  max-width: 100%;
+}
+
+.video-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 468px;
+  background-image: url('img/video.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.video-instructions {
+  font-size: 36px;
+  line-height: 38px;
+  margin: 30px 0 24px 0;
+}
+
+.video-desc {
+  font-size: 21px;
+  line-height: 22.15px;
+}
+
+@media screen and (max-width: 967px) {
+  .content-block {
+    padding: 40px 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .content-block-desc {
+    width: 100%;
+  }
+
+  .content-block-img {
+    padding: 20px 0 0 0;
+  }
+
+  .video-desc {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-section {
+    margin-top: 45px;
+  }
+
+  .lang {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #151515;
+    width: 100%;
+    height: 50px;
+  }
+
+  .main-title {
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    color: #ffffff;
+    padding: 166px 28px 12px 28px;
+  }
+  
+  .main-title span{display:none;}
+
+  .main-subtitle {
+    display: none;
+  }
+
+  .btn-block {
+    flex-direction: column;
+    padding: 17px 0 25px 0;
+  }
+
+  .btn:first-child {
+    margin: 0 auto 20px auto;
+  }
+
+  .btn {
+    width: 204px;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+
+  .content-block {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 25px;
+  }
+
+  .content-block-desc {
+    width: 100%;
+  }
+
+  .content-block-img {
+    padding: 80px 0;
+  }
+
+  .video-instructions {
+    text-align: center;
+    margin: 30px 25px 24px 25px;
+  }
+}

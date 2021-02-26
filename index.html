@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="common/lity/lity.css" rel="stylesheet" />
+    <title>Test</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="lang">
+        <a href="#" class="lang-link active">Ru</a>
+        <a href="#" class="lang-link">En</a>
+      </div>
+
+      <div class="main-section">
+        <p class="main-title">Mastercard <span>®</span>Thanks Medics For Taking Care!</p>
+
+
+        <p class="main-subtitle">
+          The medics who work at the Georgian clinics, where the COVID-19
+          infected patients are being treated, will use free transportation from
+          Mastercard
+        </p>
+
+        <div class="btn-block">
+          <a
+            href="//www.youtube.com/watch?v=YcIEu6uYsaE"
+            data-lity
+            class="btn-white btn"
+          >
+            video
+          </a>
+          <a
+            href="https://bolt.eu/en/cities/"
+            target="_blank"
+            class="btn-orange btn"
+          >
+            list of clinics
+          </a>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <div class="content-block-desc">
+          <h2 class="content-block-desc-title">About Campaign</h2>
+
+          <p class="content-block-desc-text">
+            Healthcare workers are the modern heroes in times of pandemic. they
+            have to go to work every day and do their best for the wellness of
+            their cities, countries, people and the world. Mastercard supports
+            the healthcare workers and provides them with everyday comfortable
+            rides.
+          </p>
+
+          <p class="content-block-desc-text">
+            Within 3 big cities of Georgia (Tbilisi, Kutaisi, Batumi), we have 9
+            clinics, where the COVID-19 infected patients are being treated. The
+            medics of those clinics will use the free transportation of
+            Mastercard and they will use the Bolt app for that.
+          </p>
+
+          <p class="content-block-desc-text">
+            Those, who want to use the free transportation and already has the
+            Bolt app, should select MC For Medic as a payment method and
+            activate the service. Those, who don’t have the app, can download it
+            from this page. For detailed information, you can also see a
+            video-instruction on this page about how to download the app and use
+            the free transportation. Here you can also see the list of
+            participant clinics.
+          </p>
+
+          <p class="content-block-desc-text">
+            Considering the State of Emergency, the app will be available for
+            use from 7:00 am to 8:00 pm.
+          </p>
+        </div>
+
+        <div class="content-block-img">
+          <img src="img/content-img.png" />
+        </div>
+      </div>
+      <div class="video-block">
+        <a href="//www.youtube.com/watch?v=YcIEu6uYsaE" data-lity>
+          <img src="./img/play.png" alt="video" class="video-play" />
+        </a>
+
+        <p class="video-instructions">See the instructions for using the app</p>
+        <p class="video-desc">
+          Considering the State of Emergency, the app will be available for use
+          from 7:00 am to 8:00 pm.
+        </p>
+      </div>
+    </div>
+
+    <script src="common/jquery/jquery.js"></script>
+    <script src="common/lity/lity.js"></script>
+    <script>
+      $(document).on('click', '[data-lightbox]', lity)
+    </script>
+  </body>
+</html>
